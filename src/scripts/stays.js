@@ -13,7 +13,7 @@
  * @property {number|null} beds - El número de camas disponibles (puede ser null si no se especifica).
  * @property {string} photo - Una URL a una foto del alojamiento.
  */
-export const stays = [
+const stays = [
     {
         "city": "Helsinki",
         "country": "Finland",
@@ -169,3 +169,6 @@ export const stays = [
         "photo": "https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80"
     }
 ]
+
+export default stays;
+
