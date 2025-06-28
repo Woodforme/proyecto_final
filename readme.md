@@ -1,45 +1,95 @@
-# ¡Bienvenidos al proyecto! 🎉
+Proyecto de Listado de Alojamientos al estilo Airbnb
+Descripción general
+Este proyecto es una aplicación web responsive que replica la funcionalidad principal de la interfaz de listado de alojamientos de Airbnb. Permite a los usuarios:
 
-Este repositorio es una plantilla diseñada para ayudarte a comenzar rápidamente. Sigue estos pasos para configurar tu entorno y empezar a trabajar:
+Explorar alojamientos disponibles con información detallada
 
-## 1. Usa esta plantilla
-Haz clic en el botón **"Use this template"** en la parte superior derecha de este repositorio para crear un nuevo proyecto basado en esta plantilla. 📂
+Filtrar alojamientos por ubicación, número de huéspedes y criterios de calidad
 
-## 2. Instala las dependencias
-Después de clonar tu nuevo repositorio, abre la terminal en la carpeta del proyecto y ejecuta:
-```bash
-npm install
-```
-Esto instalará todo lo necesario para que el proyecto funcione. ✅
+Ver detalles de los alojamientos incluyendo fotos, calificaciones y comodidades
 
-## 3. Compila los estilos de Tailwind CSS ✂️
-Para que los estilos de Tailwind funcionen mientras trabajas, ejecuta:
-```bash
-npm run tw
-```
-Este comando se encargará de compilar los estilos cada vez que uses clases de Tailwind en tu HTML. 🎨
+Usar la interfaz tanto en dispositivos móviles como en desktop
 
-## 4. Archivos importantes 📂
-- **`src/scripts/stays.js`**: Aquí encontrarás la data que necesitarás usar durante el proyecto. ¡Es tu fuente de información principal! 📊
-- **`src/scripts/main.js`**: Este es el archivo donde escribirás el código principal de tu aplicación. Todo lo que construyas comenzará aquí. 🛠️
-- **`src/scripts/utils.js`**: Este archivo contiene funciones auxiliares que pueden ser reutilizadas en diferentes partes de tu proyecto. Es un buen lugar para almacenar lógica común, como validaciones, formateos o cálculos. 🔧
-- **`src/images/design`**: En esta carpeta encontrarás capturas que muestran cómo debería lucir el resultado esperado. Esto te servirá como referencia visual. 🖼️
-- **`index.html`**: Este es el archivo donde desarrollarás el diseño de tu proyecto. Aquí se integrarán los estilos y el código para dar vida a tu aplicación. 🖋️
+Características principales
+1. Diseño Responsivo
+Se adapta a pantallas móviles y de escritorio
 
-```plaintext
-📂 ├── src/
-    📜 ├── scripts/
-         📄 ├── stays.js
-         📄 └── main.js
-    🖼️ ├── images/
-         🖼️ └── design/
-📄 ├── index.html
-📦 ├── package.json
-📖 └── README.md
-🚫 └── .gitignore
-```
+Implementación de modales diferentes para cada tipo de dispositivo
 
-## 5. ¡Manos a la obra! 🚀
-Ya tienes todo listo para empezar. Explora los archivos, experimenta con el código y diviértete aprendiendo. 🎉
+Manejo adecuado del cambio de tamaño de la ventana
 
-Si tienes dudas, no dudes en preguntar. ¡Éxito en tu proyecto! 💪
+2. Listado de Alojamientos
+Muestra tarjetas de alojamiento con:
+
+Fotos de alta calidad
+
+Insignias de Superhost (cuando aplica)
+
+Tipo de propiedad e información de camas
+
+Calificaciones con estrellas
+
+Detalles de ubicación
+
+Capacidad máxima de huéspedes
+
+3. Filtrado Avanzado
+Los usuarios pueden filtrar alojamientos por:
+
+Ubicación: Buscar por ciudad o país
+
+Capacidad: Especificar número de adultos y niños
+
+Filtros de calidad:
+
+Solo propiedades de Superhosts
+
+Alojamientos con alta calificación (4.0+)
+
+4. Elementos Interactivos de UI
+Interfaces modales de búsqueda para móvil y desktop
+
+Contador de huéspedes con botones de incremento/decremento
+
+Actualizaciones en tiempo real al cambiar filtros
+
+Retroalimentación visual en elementos interactivos
+
+5. Gestión de Estado
+Mantiene el estado actual de búsqueda (ubicación, número de huéspedes)
+
+Sincroniza las visualizaciones entre el encabezado y los modales
+
+Preserva las selecciones de filtros
+
+Implementación Técnica
+JavaScript Vanilla: Sin frameworks - manipulación directa del DOM
+
+CSS Moderno: Diseño responsivo con efectos hover y transiciones
+
+Estructura Modular: Separación clara de responsabilidades
+
+Accesibilidad: HTML semántico y etiquetado apropiado
+
+Cómo Usar
+Haz clic en la barra de búsqueda para abrir el modal de filtros
+
+Configura tu ubicación deseada, número de huéspedes y filtros
+
+Haz clic en "Aplicar" para ver los alojamientos que coincidan
+
+Explora los resultados en el diseño basado en tarjetas
+
+La interfaz funciona de manera similar en móvil y desktop, con adaptaciones apropiadas para cada tipo de dispositivo.
+
+Estado Inicial
+Al cargar por primera vez, la aplicación:
+
+Muestra todos los alojamientos disponibles
+
+Muestra "Finlandia" como ubicación predeterminada
+
+Muestra "Añadir huéspedes" hasta que se especifique un número
+
+Este proyecto demuestra una arquitectura limpia en JavaScript y principios de diseño responsivo, proporcionando una experiencia funcional para explorar alojamientos.
+

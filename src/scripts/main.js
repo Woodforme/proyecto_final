@@ -1,5 +1,4 @@
-import stays from './stays.js'; // Ensure your HTML script tag has type="module" if using ES Modules.
-                               // If stays.js simply defines a global 'stays' array, you can remove this import.
+import stays from './stays.js';
 
 // --- DOM Elements ---
 const staysContainer = document.getElementById('stays-container');
